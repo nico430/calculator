@@ -8,6 +8,13 @@ class Display {
   }
 
   addNumber(number){
-    this.actualValue = number;
+    if(number==='.' && this.actualValue.includes('.')) return
+    this.actualValue = this.actualValue.toString() + number.toString();
+    this.printValues()
+  }
+
+  printValues(){
+    this.actualValueDisplay.textContent = this.actualValue
+    this.prevValueDisplay.textContent = this.prevValue
   }
 }
