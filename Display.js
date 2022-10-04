@@ -8,6 +8,6 @@ class Display {
   }
 
   addNumber(number){
-    this.number = number;
+    this.actualValue = number;
   }
 }
